@@ -10,12 +10,42 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.header {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.slogan h2 {
+  font-size: 40px; 
+  text-transform: uppercase;
+  color: #060E56;  
+}
+
+.slogan { 
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+}
+
+.slogan h5 {
+  text-transform: uppercase;
+  color: #64CCC0; 
+}
+
 .nav {
   display: flex;
   background-color: blue;
   color: white;
   justify-content: space-around;
   width: 100vw;
+  padding: 8px;
 }
 
 .nav > a {
@@ -24,6 +54,10 @@ body {
 
 .nav a:visited {
   color: white;
+}
+
+.nav i {
+  font-size: 35px; 
 }
 
 h1 {

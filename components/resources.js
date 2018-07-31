@@ -2,6 +2,15 @@
 
 const resources = {
     template: `
+
+    <header class="header">
+        <img class="logo" src="graphics/hexagon.png">
+        <div class="slogan"> 
+            <h2>Heacon</h2>
+            <h5>connect and discover<h5>
+        </div> 
+    </header>
+
     <nav class="nav">
 
       <a href="#!/"><i class="material-icons">home</i></a>

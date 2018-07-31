@@ -1,8 +1,10 @@
-"use strict"; 
+"use strict";
 
 angular
     .module("app", ["ngRoute"])
-    .config(function($routeProvider){
+    .config(($routeProvider) =>{
         $routeProvider
-        .when()
-    }) 
+        .when("/resources", {
+          template: "<resources></resources>"
+        })
+    });

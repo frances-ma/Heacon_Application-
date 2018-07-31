@@ -1,14 +1,13 @@
-"use strict"; 
+"use strict";
 
-const resourceComponent = {
+const resources = {
     template: `
-        
+    <h1>Heacon</h1>
 
-
-    `, 
-
+    <p>Testing testing?</p>
+    `
 }
 
-angular 
+angular
 .module("app")
-.component("resourceComponent", resourceComponent); 
+.component("resources", resources);

@@ -4,7 +4,7 @@ const resources = {
     template: `
     <nav class="nav">
 
-      <a href="#!/resources"><i class="material-icons">home</i></a>
+      <a href="#!/"><i class="material-icons">home</i></a>
 
       <a href="#!/resources"><i class="material-icons">people_outline</i></a>
 

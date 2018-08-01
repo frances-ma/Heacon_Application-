@@ -1,0 +1,48 @@
+.friendbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+
+.friendlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addcontact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 2px;
+  width: 50%;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn a:active {
+  font-weight: bold;
+}
+
+.btn a:visited {
+  color: black;
+}
+
+.invite-header {
+  display: flex;
+  justify-content: center;
+}
+
+.invitations {
+
+}

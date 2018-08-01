@@ -25,20 +25,20 @@ const connections = {
 </nav>
 
     <section class="friendbuttons">
-      <section class="friendlist">
+      <section class="friendlist btn">
         <a href="">300 Connections</a>
       </section>
-      <section class="addcontact">
+      <section class="addcontact btn">
         <a href="">Add Contact<i class="material-icons">add_circle_outline</i></a>
       </section>
     </section>
 
       <section class="invitations">
-        <div>
-          <img src="">
-          <h3>Name Goes Here</h3>
-        </div>
-
+        <h3 class="invite-header">Invitations</h3>
+          <div>
+            <img src="">
+            <h3>Name Goes Here</h3>
+          </div>
 
       </section>
   `

@@ -24,9 +24,11 @@ const main = {
 
   </nav>
 
-  <h4>Connecting Rare Disease Patients and the Organizations that support them.</h4>
+  <h4 class="mission">Connecting Rare Disease Patients and the Organizations that support them.</h4>
 
-  <p>You've come a little before we are ready.  Sign-up today and you'll receive
+  <img class="connected" src="graphics/connected.jpg"> 
+  
+  <p class="more_info">You've come a little before we are ready.  Sign-up today and you'll receive
   early beta access and start connecting in a meaningful way to patients with
   shared experiences.</p>
   `

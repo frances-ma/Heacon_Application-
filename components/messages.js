@@ -24,14 +24,21 @@ const messages = {
 </nav>
 
   <h1>Discussion Boards</h1>
-  <section class="board_container">
-    <a href="">Lupus</a>
-    <a href="">Progeria</a>
-    <a href="">Multiple Sclerosis</a>
-    <a href="">Heart Failure</a>
-    <a href=""> Sarcoidosis </a>
-    <a href=""> Duchene's </a>
+
+  <section class="board_1">
+    <a href="" class="lupus box_style">Lupus</a>
+    <a href="" class="progeria box_style">Progeria</a>
   </section>
+
+  <section class="board_2">
+    <a href="" class="ms box_style">Multiple Sclerosis</a>
+    <a href="" class="heart box_style">Heart Failure</a>
+  </section> 
+
+  <section class="board_2">
+    <a href="" class="duchene box_style"> Duchene's </a>
+    <a href="" class="sarco box_style"> Sarcoidosis </a>
+  <section>
   `
 }
 angular

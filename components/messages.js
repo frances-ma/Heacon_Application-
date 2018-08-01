@@ -22,6 +22,16 @@ const messages = {
   <a href="#!/resources"><i class="material-icons">local_pharmacy<a href="#!/resources"></i></a>
 
 </nav>
+
+  <h1>Discussion Boards</h1>
+  <section class="board_container">
+    <a href="">Lupus</a>
+    <a href="">Progeria</a>
+    <a href="">Multiple Sclerosis</a>
+    <a href="">Heart Failure</a>
+    <a href=""> Sarcoidosis </a>
+    <a href=""> Duchene's </a>
+  </section>
   `
 }
 angular

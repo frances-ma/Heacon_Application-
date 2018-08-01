@@ -23,6 +23,24 @@ const connections = {
   <a href="#!/resources"><i class="material-icons">local_pharmacy<a href="#!/resources"></i></a>
 
 </nav>
+
+    <section class="friendbuttons">
+      <section class="friendlist">
+        <a href="">300 Connections</a>
+      </section>
+      <section class="addcontact">
+        <a href="">Add Contact<i class="material-icons">add_circle_outline</i></a>
+      </section>
+    </section>
+
+      <section class="invitations">
+        <div>
+          <img src="">
+          <h3>Name Goes Here</h3>
+        </div>
+
+
+      </section>
   `
 }
 

@@ -23,25 +23,25 @@ body {
 }
 
 .slogan h2 {
-  font-size: 40px; 
+  font-size: 40px;
   text-transform: uppercase;
-  color: #060E56;  
+  color: #060E56;  /*navy blue*/
 }
 
-.slogan { 
-  display: flex; 
-  justify-content: center; 
-  flex-direction: column; 
+.slogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .slogan h5 {
   text-transform: uppercase;
-  color: #64CCC0; 
+  color: #64CCC0; /*aquamarine*/
 }
 
 .nav {
   display: flex;
-  background-color: #4FC4F4;
+  background-color: #4FC4F4; /*cornflower blue*/
   color: white;
   justify-content: space-around;
   width: 100vw;
@@ -57,12 +57,12 @@ body {
 }
 
 .nav i {
-  font-size: 35px; 
+  font-size: 35px;
 }
 
 h1 {
   text-align: center;
-  padding-top: 5px; 
+  padding-top: 5px;
 }
 
 .reslist {
@@ -74,7 +74,7 @@ h1 {
 }
 
 .reslist a {
-  background-color: #4FC4F4;
+  background-color: #4FC4F4; /*cornflower blue*/
   color: white;
   width: 90%;
   margin: 5px;
@@ -89,19 +89,19 @@ h1 {
 .mission {
     text-align: center;
     padding: 10px;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 .connected {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 7px;
-    border: 4px solid #FBB54F;
+    border: 4px solid #FBB54F; /*marigold*/
 }
 
 .more_info {
-    text-align: center; 
+    text-align: center;
     padding: 10px;
 }
 

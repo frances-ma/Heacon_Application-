@@ -7,6 +7,15 @@ angular
         .when("/", {
           template: "<main></main>"
         })
+        .when("/connections", {
+          template: "<connections></connections>"
+        })
+        .when("/messages", {
+          template: "<messages></messages>"
+        })
+        .when("/alerts", {
+          template: "<alerts></alerts>"
+        })
         .when("/resources", {
           template: "<resources></resources>"
         })

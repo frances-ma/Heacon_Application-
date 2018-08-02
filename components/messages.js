@@ -35,7 +35,7 @@ const messages = {
     <a href="" class="heart box_style">Heart Failure</a>
   </section> 
 
-  <section class="board_2">
+  <section class="board_3">
     <a href="" class="duchene box_style"> Duchene's </a>
     <a href="" class="sarco box_style"> Sarcoidosis </a>
   <section>

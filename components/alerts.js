@@ -24,9 +24,9 @@ const alerts = {
 </nav>
 
 
-    <h1>Health Alerts</h1>
-     <div>
-       <h2>Health Alerts</h2>
+    <h1 class="alert_text">Health Alerts</h1>
+     <div class="alert_box">
+       <h3>Lupus Board Updates</h3>
      </div>
   `
 

@@ -24,7 +24,7 @@ const messages = {
 </nav>
 
   <h1>Discussion Boards</h1>
-
+<div class="board_container">
   <section class="board_1">
     <a href="" class="lupus box_style">Lupus</a>
     <a href="" class="progeria box_style">Progeria</a>
@@ -39,6 +39,7 @@ const messages = {
     <a href="" class="duchene box_style"> Duchene's </a>
     <a href="" class="sarco box_style"> Sarcoidosis </a>
   <section>
+<div>
   `
 }
 angular

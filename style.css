@@ -110,6 +110,10 @@ h1 {
 }
 
 
+.board_container {
+    width: 100vw;
+}
+
 .board_1 {
     display: flex;
     align-items: center;
@@ -137,7 +141,6 @@ h1 {
 
 .board_2 {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 0 20px 0 20px;
 }

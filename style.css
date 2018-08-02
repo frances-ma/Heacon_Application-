@@ -110,57 +110,6 @@ h1 {
 }
 
 
-.board_container {
-    width: 100vw;
-}
-
-.board_1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px 0 20px;
-}
-
-.box_style {
-    margin: 2px; 
-    font-size: 5vw;
-    font-size: 5vw;
-    text-decoration: none; 
-    width: 50%;
-    padding: 50px;
-    color: white; 
-}
-
-.lupus {
-    background-color: #F35851; 
-}
-
-.progeria {
-    background-color: #4FC4F4; 
-}
-
-.board_2 {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px 0 20px;
-}
-
-.ms {
-    background-color: #9DCC66; 
-}
-
-.heart {
-    background-color: #FBB54F; 
-}
-
-.sarco {
-    background-color: #BC66CB; 
-}
-
-.duchene {
-    background-color: orange; 
-}
-
 @media only screen and (mid-width: 768px) {
 
 }

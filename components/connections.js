@@ -26,7 +26,7 @@ const connections = {
 
     <section class="friendbuttons">
       <section class="friendlist btn">
-        <a href="">300 Connections</a>
+        <a href="">300 <br>Connections</a>
       </section>
       <section class="addcontact btn">
         <a href="">Add Contact<i class="material-icons">add_circle_outline</i></a>

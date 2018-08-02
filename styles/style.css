@@ -48,8 +48,9 @@ body {
   padding: 8px;
 }
 
-a {
+.nav a, .nav i {
   outline: none;
+  color: white;
 }
 
 .nav > a {

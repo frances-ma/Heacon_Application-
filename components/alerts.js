@@ -22,6 +22,12 @@ const alerts = {
   <a href="#!/resources"><i class="material-icons">local_pharmacy<a href="#!/resources"></i></a>
 
 </nav>
+
+
+    <h1>Health Alerts</h1>
+     <div>
+       <h2>Health Alerts</h2>
+     </div>
   `
 
 }

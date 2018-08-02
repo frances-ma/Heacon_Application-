@@ -43,6 +43,16 @@
   justify-content: center;
 }
 
-.invitations {
+.invitations, .recentadds {
+  display: flex;
+}
 
+.invitations img, .recentadds img {
+  height: 100px;
+  width: 100px;
+}
+
+.recentheader {
+  display: flex;
+  justify-content: center;
 }

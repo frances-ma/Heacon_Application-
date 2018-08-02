@@ -23,14 +23,20 @@ const alerts = {
 
 </nav>
 
-
     <h1 class="alert_text">Health Alerts</h1>
      <div class="alert_box">
-       <h3>Lupus Board Updates</h3>
+       <div class="lupus_board">Lupus Board Updates</div>
      </div>
+     
   `
 
 }
 angular
 .module("app")
 .component("alerts", alerts);
+
+/* <div class="mom">
+  <a href="https://www.kaleidoscopefightinglupus.org/coping-with-lupus-how-does-lupus-affect-your-state-of-mind-and-body/">
+  <img class="coping" src="graphics/coping.jpg"/>
+  </a>
+</div> */

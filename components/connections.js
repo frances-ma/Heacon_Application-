@@ -33,16 +33,17 @@ const connections = {
       </section>
     </section>
 
-    <h2 class="invite-header">Invitations</h2>
+    <h1 class="invite-header">Invitations</h1>
 
-      <section ng-repeat="item in $ctrl.invitations" class="invitations">
-            <img src="{{ item.image }}" alt="An image of a blank person">
-          <section>
-            <h3> {{ item.name }}</h3>
-            <p> {{ item.location }}</p>
-            <p>  Groups: {{ item.groups }}</p>
-          </section>
-      </section>
+            <section ng-repeat="item in $ctrl.invitations" class="invitations">
+                  <img src="{{ item.image }}" alt="An image of a blank person">
+                <section>
+                  <h3> {{ item.name }}</h3>
+                  <p> {{ item.location }}</p>
+                  <p>  Groups: {{ item.groups }}</p>
+                </section>
+            </section>
+
 
       <section>
         <h3 class="recentheader">Recently Added</h3>

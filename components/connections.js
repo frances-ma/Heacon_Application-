@@ -41,6 +41,10 @@ const connections = {
           </div>
 
       </section>
+
+      <section class="recentadds">
+      
+      </section>
   `
 }
 

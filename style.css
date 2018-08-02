@@ -48,6 +48,10 @@ body {
   padding: 8px;
 }
 
+a {
+  outline: none; 
+}
+
 .nav > a {
   margin: 0 auto;
 }

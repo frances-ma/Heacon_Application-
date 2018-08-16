@@ -27,7 +27,7 @@ const resources = {
 
     <h1>Resources</h1>
         <section class="reslist">
-            <a href="">Medication List</a>
+            <a href="#!/medlist">Medication List</a>
             <a href="">Doctor's Notes</a>
             <a href="">Medication Calendar</a>
             <a href="">Med Document Holder</a>

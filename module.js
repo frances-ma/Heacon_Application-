@@ -19,4 +19,7 @@ angular
         .when("/resources", {
           template: "<resources></resources>"
         })
+        .when("/medlist", {
+          template: "<medlist></medlist>"
+        })
     });

@@ -26,7 +26,7 @@ const connections = {
 
     <section class="friendbuttons">
       <section class="friendlist btn">
-        <a href="">300 <br>Connections</a>
+        <a href="">{{ $ctrl.invitations.length }} <br>Connections</a>
       </section>
       <section class="addcontact btn">
         <a href="">Add Contact<i class="material-icons">add_circle_outline</i></a>
@@ -36,7 +36,7 @@ const connections = {
     <h1 class="invite-header">Invitations</h1>
 
             <section ng-repeat="item in $ctrl.invitations" class="invitations">
-                  <img src="{{ item.image }}" alt="An image of a blank person">
+                  <img src="{{ item.image }}" alt="A blank person avatar">
                 <section>
                   <h3> {{ item.name }}</h3>
                   <p> {{ item.location }}</p>
@@ -49,7 +49,7 @@ const connections = {
         <h3 class="recentheader">Recently Added</h3>
 
         <section class="recentadds">
-              <img src="{{ $ctrl.invitations[0].image }}" alt="An image of a blank person">
+              <img src="{{ $ctrl.invitations[0].image }}" alt="A blank person avatar">
             <section>
               <h3> {{ $ctrl.invitations[0].name }}</h3>
               <p> {{ $ctrl.invitations[0].location }}</p>
@@ -65,19 +65,19 @@ const connections = {
     vm.invitations = [
       {
       name: "Lorem Ipsum",
-      image: "invitation.png",
+      image: "./graphics/invitation.png",
       location: "Detroit, MI",
       groups: "Lupus"
     },
     {
       name: "Larry Ipsum",
-      image: "invitation.png",
+      image: "./graphics/invitation.png",
       location: "Royal Oak, MI",
       groups: "Heart Failure"
     },
     {
       name: "Lauren Ipsum",
-      image: "invitation.png",
+      image: "./graphics/invitation.png",
       location: "Highland Park, MI",
       groups: "Duchene's"
     }

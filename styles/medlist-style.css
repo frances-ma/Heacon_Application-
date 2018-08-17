@@ -1,0 +1,46 @@
+.medlistcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.medlistcontainer li {
+  margin-bottom: 12px;
+}
+
+.completed {
+  color: lightgreen;
+}
+
+.refresh, .complete, .addmed {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: white;
+}
+
+.newmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.newmed h3, .newmed input {
+  margin-bottom: 8px;
+}
+
+.newmed input, .medfilter {
+  border: 1px solid grey;
+  padding: 5px;
+  outline: none;
+  width: 72%;
+}
+
+.medfilter {
+  border: 1px solid black;
+}

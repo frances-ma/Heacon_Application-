@@ -24,10 +24,10 @@ const medlist = {
 
   </nav>
 
-  <form ng-submit="$ctrl.addItem()" class="smallerbox">
+<div class="medlistcontainer">
   <h2>Medication List</h2>
     <p>A place to store and track your medications</p>
-      <input type="text" placeholder="Filter your list by name" ng-model="itemName">
+      <input type="text" class="medfilter" placeholder="Filter your list by name" ng-model="itemName">
 
         <ol>
           <li ng-repeat="item in $ctrl.list | filter: itemName track by $index"
@@ -36,22 +36,26 @@ const medlist = {
             <p> {{ item.dose }} </p>
             <p> {{ item.time }} </p>
 
-            <button type="button" id="complete" ng-if="item.completed === false"
-            ng-click="$ctrl.completeItem($index);">Complete</button>
-
-                <input type="checkbox">
-              <i class="material-icons" ng-click="$ctrl.removeItem($index);">close</i>
+            <button type="button" class="complete" ng-if="item.completed === false"
+            ng-click="$ctrl.completeItem($index);">Mark as taken</button>
+            <button type="button" class="refresh" ng-if="item.completed === true"
+            ng-click="$ctrl.removeClass($index);">Refresh</button>
+            <i class="material-icons" ng-click="$ctrl.removeItem($index);">close</i>
           </li>
         </ol>
-    <h3>Add a new medication here: </h3>
-      <input type="text" ng-model="$ctrl.newItem.name" placeholder="Add medication name"><br>
-      <input type="text" ng-model="$ctrl.newItem.dose" placeholder="Add medication dose"><br>
-      <input type="text" ng-model="$ctrl.newItem.time" placeholder="Add medication time"><br>
 
-      <button id="add">Add</button>
+
+
+  <form ng-submit="$ctrl.addItem()" class="newmed">
+    <h3>Add a new medication here: </h3>
+      <input type="text" ng-model="$ctrl.newItem.name" placeholder="Add medication name">
+      <input type="text" ng-model="$ctrl.newItem.dose" placeholder="Add medication dose">
+      <input type="text" ng-model="$ctrl.newItem.time" placeholder="Add medication time">
+
+      <button class="addmed">Add</button>
   </form>
 
-
+</div>
   `,
   controller: function(){
     const vm = this;
@@ -93,6 +97,9 @@ const medlist = {
   //Marks items as complete
     vm.completeItem = (index)=> {
       vm.list[index].completed = true;
+    }
+    vm.removeClass = (index)=> {
+      vm.list[index].completed = false;
     }
   }
 }

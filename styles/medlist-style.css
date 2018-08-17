@@ -16,7 +16,7 @@
 .refresh, .complete, .addmed {
   border: 1px solid black;
   border-radius: 5px;
-  padding: 4px;
+  padding: 6px;
   background-color: white;
 }
 
@@ -43,4 +43,8 @@
 
 .medfilter {
   border: 1px solid black;
+}
+
+.addmed {
+  padding: 6px 8px;
 }

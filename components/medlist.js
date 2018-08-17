@@ -2,13 +2,7 @@
 
 const medlist = {
   template: `
-  <header class="header">
-      <img class="logo" src="graphics/hexagon.png">
-      <div class="slogan">
-          <h2>Heacon</h2>
-          <h5>connect and discover<h5>
-      </div>
-  </header>
+
 
   <nav class="nav">
 
@@ -36,11 +30,16 @@ const medlist = {
             <p> {{ item.dose }} </p>
             <p> {{ item.time }} </p>
 
+            <input type="checkbox" checked="checked" value="checked" class="checkbox" ng-if="item.completed === true"
+            ng-show="showme=true" ng-click="showme=false">
+
             <button type="button" class="complete" ng-if="item.completed === false"
-            ng-click="$ctrl.completeItem($index);">Mark as taken</button>
+            ng-click="$ctrl.completeItem($index);">Mark As Taken</button>
+            
             <button type="button" class="refresh" ng-if="item.completed === true"
-            ng-click="$ctrl.removeClass($index);">Refresh</button>
-            <i class="material-icons" ng-click="$ctrl.removeItem($index);">close</i>
+            ng-click="$ctrl.removeClass($index);">Reset</button>
+
+            <button type="button" class="remove" ng-click="$ctrl.removeItem($index);">Remove From List</button>
           </li>
         </ol>
 
@@ -64,7 +63,7 @@ const medlist = {
       name: "Lorem",
       dose: "10mg",
       time: "once daily",
-      completed: true
+      completed: false
     },
       {
       name: "Ipsum",

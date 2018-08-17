@@ -10,14 +10,39 @@
 }
 
 .completed {
-  color: lightgreen;
+  color: #9DCC66; /*light green*/
 }
 
-.refresh, .complete, .addmed {
+.refresh, .complete, .addmed, .remove {
   border: 1px solid black;
   border-radius: 5px;
-  padding: 6px;
+  padding: 8px;
   background-color: white;
+  font-size: 14px;
+  color: white;
+}
+
+.remove {
+  background-color: #F35851; /*red*/
+}
+
+.addmed {
+  background-color: #060E56; /*navy blue*/
+}
+
+.refresh {
+  background-color: #9DCC66; /*light green*/
+}
+
+.complete {
+  background-color: #4FC4F4; /*cornflower blue*/
+}
+
+.checkbox {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 12px;
 }
 
 .newmed {
@@ -36,15 +61,18 @@
 
 .newmed input, .medfilter {
   border: 1px solid grey;
-  padding: 5px;
+  padding: 8px;
+  font-size: 14px;
   outline: none;
   width: 72%;
 }
 
 .medfilter {
   border: 1px solid black;
+  margin-bottom: 4px;
 }
 
 .addmed {
-  padding: 6px 8px;
+  padding: 6px;
+  width: 72%;
 }

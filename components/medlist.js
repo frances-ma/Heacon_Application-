@@ -19,8 +19,8 @@ const medlist = {
   </nav>
 
 <div class="medlistcontainer">
-  <h2>Medication List</h2>
-    <p>A place to store and track your medications</p>
+  <h1>Medication List</h1>
+    <p class="medlistlabel">A place to store and track your medications</p>
       <input type="text" class="medfilter" placeholder="Filter your list by name" ng-model="itemName">
 
         <ol>
@@ -35,7 +35,7 @@ const medlist = {
 
             <button type="button" class="complete" ng-if="item.completed === false"
             ng-click="$ctrl.completeItem($index);">Mark As Taken</button>
-            
+
             <button type="button" class="refresh" ng-if="item.completed === true"
             ng-click="$ctrl.removeClass($index);">Reset</button>
 

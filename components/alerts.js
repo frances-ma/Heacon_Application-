@@ -1,13 +1,7 @@
 "use strict";
 const alerts = {
   template: `
-  <header class="header">
-  <img class="logo" src="graphics/hexagon.png">
-  <div class="slogan">
-      <h2>Heacon</h2>
-      <h5>connect and discover<h5>
-    </div>
-  </header>
+
 
 <nav class="nav">
 
@@ -27,7 +21,7 @@ const alerts = {
      <div class="alert_box">
        <div class="lupus_board">Lupus Board Updates</div>
      </div>
-     
+
   `
 
 }

@@ -1,13 +1,7 @@
 "use strict";
 const messages = {
   template: `
-  <header class="header">
-  <img class="logo" src="graphics/hexagon.png">
-  <div class="slogan">
-      <h2>Heacon</h2>
-      <h5>connect and discover<h5>
-    </div>
-  </header>
+
 
 <nav class="nav">
 
@@ -33,7 +27,7 @@ const messages = {
   <section class="board_2">
     <a href="" class="ms box_style">Multiple Sclerosis</a>
     <a href="" class="heart box_style">Heart Failure</a>
-  </section> 
+  </section>
 
   <section class="board_3">
     <a href="" class="duchene box_style"> Duchene's </a>

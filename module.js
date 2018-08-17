@@ -22,4 +22,7 @@ angular
         .when("/medlist", {
           template: "<medlist></medlist>"
         })
+        .when("/docnotes", {
+          template: "<docnotes></docnotes>"
+        })
     });

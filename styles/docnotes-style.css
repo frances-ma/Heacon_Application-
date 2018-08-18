@@ -17,9 +17,13 @@
   border: 1px solid grey;
   border-radius: 5px;
   margin-bottom: 7px;
-  padding: 5px;
+  padding: 8px;
   outline: none;
   font-size: 14px;
+}
+
+.addnoteform textarea {
+  height: 110px;
 }
 
 .close {
@@ -28,6 +32,11 @@
 }
 .notes {
   display: flex;
+  justify-content: space-around;
+}
+
+.notes h3, .deletenote {
+  margin-bottom: 5px;
 }
 
 .notebtn {
@@ -40,6 +49,13 @@
 .newnote {
   background-color: #9DCC66; /*light green*/
   margin-bottom: 5px;
+}
+
+.newnotecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .savenote {

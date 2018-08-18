@@ -12,42 +12,46 @@ const docnotes = {
 
   <h1>Doctor's Notes</h1>
 
-  <button ng-click="$ctrl.showForm();" class="newnote notebtn">New Note</button>
-
-  <form ng-show="$ctrl.show" class="addnote" ng-submit="$ctrl.onSubmit($ctrl.newNote); $ctrl.closeForm();">
-
-    <section class="close">
-      <i class="material-icons" ng-click="$ctrl.closeForm();">close</i>
+    <section class="newnotecontainer">
+      <button ng-click="$ctrl.showForm();" class="newnote notebtn">New Note</button>
     </section>
 
-      <section class="addnoteform">
-        <input type="text" placeholder="title of new note" ng-model="$ctrl.newNote.title">
-          <textarea placeholder="note goes here" ng-model="$ctrl.newNote.content"></textarea>
-          <button class="savenote notebtn">Save</button>
+    <form ng-show="$ctrl.show" class="addnote" ng-submit="$ctrl.onSubmit($ctrl.newNote); $ctrl.closeForm();">
+
+      <section class="close">
+        <i class="material-icons" ng-click="$ctrl.closeForm();">close</i>
       </section>
-  </form>
 
-  <section ng-repeat="item in $ctrl.notes | filter: itemName track by $index" class="notes">
-    <h3 ng-click="$ctrl.showNote($ctrl.$index);">{{ item.title }}</h3>
-    <button type="button" ng-click="$ctrl.deleteNote($ctrl.$index);" class="deletenote notebtn">Delete Note</button>
-  </section>
+        <section class="addnoteform">
+          <input type="text" placeholder="title of new note" ng-model="$ctrl.newNote.title">
+            <textarea placeholder="note goes here" ng-model="$ctrl.newNote.content"></textarea>
+            <button class="savenote notebtn">Save</button>
+        </section>
+    </form>
 
-  <form ng-show="$ctrl.showThisNote">
-    <h3>{{$ctrl.notes[$index].title}}</h3>
-      <p>{{ $ctrl.notes[$index].content}}</p>
-      <button class="savenote notebtn">Save</button>
-  </form>
+    <section ng-repeat="item in $ctrl.notes | filter: itemName track by $index" class="notes">
+
+      <h3 ng-click="$ctrl.showNote($ctrl.$index);">{{ item.title }}</h3>
+
+      <form ng-show="$ctrl.showThisNote">
+        <h3>{{ $ctrl.notes[$index].title }}</h3>
+          <p>{{ $ctrl.notes[$index].content }}</p>
+          <button class="savenote notebtn" ng-click="$ctrl.closeNote();">Save</button>
+      </form>
+
+      <button type="button" ng-click="$ctrl.deleteNote($ctrl.$index);" class="deletenote notebtn">Delete Note</button>
+    </section>
 
   `,
   controller: function(){
     const vm = this;
     vm.notes = [
       {
-        title: "Dr. Ipsum Appt Summary",
+        title: "Dr. Ipsum (Neurologist) Appt Summary",
         content: "filler text"
       },
       {
-        title: "Dr. Lorem Appt Summary",
+        title: "Dr. Lorem Prescription Refill",
         content: "filler text"
       },
       {
@@ -75,6 +79,9 @@ const docnotes = {
       }
       vm.showNote = (index) => {
         vm.showThisNote = true;
+      }
+      vm.closeNote = (index) => {
+        vm.showThisNote = false;
       }
  }
 

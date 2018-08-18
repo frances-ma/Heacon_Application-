@@ -30,8 +30,9 @@ const medlist = {
             <p> {{ item.dose }} </p>
             <p> {{ item.time }} </p>
 
-            <input type="checkbox" checked="checked" value="checked" class="checkbox" ng-if="item.completed === true"
-            ng-show="showme=true" ng-click="showme=false">
+            <img src="./graphics/checkbox.png" alt="a black checkbox on white background"
+            class="checkbox" ng-if="item.completed === true"
+            ng-show="showme=true">
 
             <button type="button" class="complete" ng-if="item.completed === false"
             ng-click="$ctrl.completeItem($index);">Mark As Taken</button>

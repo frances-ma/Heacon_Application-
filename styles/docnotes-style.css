@@ -1,0 +1,51 @@
+.addnote {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.addnoteform {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.addnoteform input, .addnoteform textarea {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  padding: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+}
+.notes {
+  display: flex;
+}
+
+.notebtn {
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.newnote {
+  background-color: #9DCC66; /*light green*/
+  margin-bottom: 5px;
+}
+
+.savenote {
+  background-color: #BC66CB; /*purple*/
+}
+
+.deletenote {
+  background-color: #F35851; /*red*/
+}

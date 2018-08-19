@@ -8,6 +8,7 @@
     box-shadow: 0px 0px 12px 4px rgba(151,184,175,0.73);
     display: flex; 
     justify-content: center;
+    flex-direction: column; 
     width: 90%;
     height: 90%;
     margin: 0 auto;
@@ -16,8 +17,10 @@
 }
 
 .lupus_board {  
-    color: #060E56; 
+    color: #060E56;
     text-align: center;
+    justify-content: center; 
+    margin: 0 auto;
     margin-top: 5px;
     width: 70%;
     height: 6%;
@@ -27,12 +30,61 @@
 
 .mom {
     display: flex; 
-    flex-direction: column; 
 }
 
 
 .coping {
-    flex-direction: column; 
-    width: 100px; 
+    width: 100%; 
     height: auto; 
+    padding: 5%;
+}
+
+.article_title {
+    display: flex; 
+    text-align: center; 
+    margin-top: 8%;
+}
+
+.dropbtn {
+    display: flex;
+    margin: 0 auto; 
+    background-color: #4FC4F4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #0067cc;
 }

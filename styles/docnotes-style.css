@@ -30,20 +30,28 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .notes {
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 7px;
+  flex-direction: column;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 8px;
 }
 
+.notes h3, .notes p {
+  color: #060E56; /*navy blue*/
+}
 .notes h3, .deletenote {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .notebtn {
   color: white;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 8px;
+  padding: 5px;
 }
 
 .newnote {
@@ -64,4 +72,10 @@
 
 .deletenote {
   background-color: #F35851; /*red*/
+  margin: 0 10px;
+}
+
+.note-right {
+  display: flex;
+  justify-content: flex-end;
 }

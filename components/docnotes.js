@@ -29,17 +29,19 @@ const docnotes = {
         </section>
     </form>
 
-    <section ng-repeat="item in $ctrl.notes | filter: itemName track by $index" class="notes">
+    <section ng-repeat="item in $ctrl.notes track by $index" class="notes">
+      <section class="note-left">
+        <h3 ng-click="showme=true">{{ item.title }}</h3>
 
-      <h3 ng-click="$ctrl.showNote($ctrl.$index);">{{ item.title }}</h3>
-
-      <form ng-show="$ctrl.showThisNote">
-        <h3>{{ $ctrl.notes[$index].title }}</h3>
-          <p>{{ $ctrl.notes[$index].content }}</p>
-          <button class="savenote notebtn" ng-click="$ctrl.closeNote();">Save</button>
+      <form ng-show="showme">
+          <p>{{ item.content }}</p>
+          <button class="savenote notebtn" ng-click="showme=false">Save</button>
       </form>
+      </section>
 
-      <button type="button" ng-click="$ctrl.deleteNote($ctrl.$index);" class="deletenote notebtn">Delete Note</button>
+      <section class="note-right">
+        <button type="button" ng-click="$ctrl.deleteNote($index);" class="deletenote notebtn">Delete Note</button>
+      </section>
     </section>
 
   `,
@@ -48,15 +50,15 @@ const docnotes = {
     vm.notes = [
       {
         title: "Dr. Ipsum (Neurologist) Appt Summary",
-        content: "filler text"
+        content: "filler text here"
       },
       {
         title: "Dr. Lorem Prescription Refill",
-        content: "filler text"
+        content: "filler text goes here too"
       },
       {
         title: "Dr. Satler Appt Summary",
-        content: "filler text"
+        content: "filler text also goes here"
       }
     ];
       vm.showForm = ()=> {
@@ -77,13 +79,7 @@ const docnotes = {
       vm.deleteNote = (index) => {
         vm.notes.splice(index, 1);
       }
-      vm.showNote = (index) => {
-        vm.showThisNote = true;
-      }
-      vm.closeNote = (index) => {
-        vm.showThisNote = false;
-      }
- }
+  }
 
 }
 

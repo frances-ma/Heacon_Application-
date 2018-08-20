@@ -32,8 +32,8 @@ const messages = {
   <section class="board_3">
     <a href="" class="duchene box_style"> Duchene's </a>
     <a href="" class="sarco box_style"> Sarcoidosis </a>
-  <section>
-<div>
+  </section>
+</div>
   `
 }
 angular

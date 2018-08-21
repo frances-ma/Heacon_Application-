@@ -50,7 +50,7 @@ const docnotes = {
     vm.notes = [
       {
         title: "Dr. Ipsum (Neurologist) Appt Summary",
-        content: "filler text here"
+        content: "filler text here more filler text and on and on and on"
       },
       {
         title: "Dr. Lorem Prescription Refill",

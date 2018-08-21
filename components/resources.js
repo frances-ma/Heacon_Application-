@@ -15,9 +15,9 @@ const resources = {
         <section class="reslist">
             <a href="#!/medlist">Medication List</a>
             <a href="#!/docnotes">Doctor's Notes</a>
-            <a href="">Medication Calendar</a>
-            <a href="">Med Document Holder</a>
-            <a href="">Specialists Near You</a>
+            <a href="#!/medcalendar">Medication Calendar</a>
+            <a href="#!/docfolder">Med Document Holder</a>
+            <a href="#!/specialists">Specialists Near You</a>
         </section>
     `
 }

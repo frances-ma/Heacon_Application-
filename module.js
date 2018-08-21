@@ -25,4 +25,13 @@ angular
         .when("/docnotes", {
           template: "<docnotes></docnotes>"
         })
+        .when("/docfolder", {
+          template: "<docfolder></docfolder>"
+        })
+        .when("/medcalendar", {
+          template: "<medcalendar></medcalendar>"
+        })
+        .when("/specialists", {
+          template: "<specialists></specialists>"
+        })
     });

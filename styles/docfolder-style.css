@@ -11,3 +11,13 @@
   color: #060E56; /*navy blue*/
   margin-left: 10px;
 }
+
+.folderbtns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.folderbtns button {
+  margin: 5px;
+}

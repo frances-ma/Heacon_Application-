@@ -11,6 +11,11 @@ const docfolder = {
   </nav>
 
   <h1>Medical Document Folder</h1>
+  
+  <section class="folderbtns">
+    <button type="button" class="notebtn addmed">Add File</button>
+    <button type="button" class="notebtn refresh">Add Folder</button>
+  </section>
 
   <section ng-repeat="item in $ctrl.docs track by $index" class="docs">
       <i class="material-icons">folder</i>

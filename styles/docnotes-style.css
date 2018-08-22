@@ -1,7 +1,6 @@
 .addnote {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
@@ -20,6 +19,7 @@
   padding: 8px;
   outline: none;
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .addnoteform textarea {
@@ -53,6 +53,7 @@
   border-radius: 5px;
   padding: 5px;
   font-size: 14px;
+  width: 30%;
 }
 
 .newnote {
@@ -65,10 +66,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 12px;
 }
 
 .savenote {
   background-color: #BC66CB; /*purple*/
+  margin: 0 auto;
 }
 
 .deletenote {

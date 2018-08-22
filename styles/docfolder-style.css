@@ -1,0 +1,13 @@
+.docs {
+  display: flex;
+  margin-bottom: 7px;
+  /* flex-direction: column; */
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 8px;
+}
+
+.docs h3 {
+  color: #060E56; /*navy blue*/
+  margin-left: 10px;
+}

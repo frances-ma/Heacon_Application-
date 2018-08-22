@@ -31,11 +31,11 @@ const docnotes = {
 
     <section ng-repeat="item in $ctrl.notes track by $index" class="notes">
       <section class="note-left">
-        <h3 ng-click="showme=true">{{ item.title }}</h3>
+        <h3 ng-click="showme = !showme">{{ item.title }}</h3>
 
       <form ng-show="showme">
           <p>{{ item.content }}</p>
-          <button class="savenote notebtn" ng-click="showme=false">Save</button>
+
       </form>
       </section>
 

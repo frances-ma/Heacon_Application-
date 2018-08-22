@@ -12,12 +12,10 @@ const docfolder = {
 
   <h1>Medical Document Folder</h1>
 
-  <section ng-repeat="item in $ctrl.docs track by $index" class="notes">
+  <section ng-repeat="item in $ctrl.docs track by $index" class="docs">
       <i class="material-icons">folder</i>
       <h3>{{ item.name }}</h3>
   </section>
-
-
 
   `,
   controller: function() {

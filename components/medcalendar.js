@@ -12,7 +12,19 @@ const medcalendar = {
 
   <h1>Medication Calendar</h1>
 
-  <p>Under construction...</p>
+  <section class="med-calendar-container">
+    <img src="./graphics/medcalendar.png" class="med-calendar" alt="calendar with medication times and appointments">
+  </section>
+
+  <section class="cal-list">
+    <h3>September 2018</h3>
+
+    <h4>Friday 15</h4>
+    <ul>
+      <li>10:30am Ipsum 30mg</li>
+      <li>2:30am Lorem 20mg</li>
+    </ul>
+  </section>
   `
 }
 

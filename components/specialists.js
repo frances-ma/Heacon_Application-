@@ -10,22 +10,16 @@ const specialists = {
     <a href="#!/resources"><i class="material-icons">local_pharmacy<a href="#!/resources"></i></a>
   </nav>
 
-  <h1>Specialists Near You</h1>
+  <h1 class="specialists-header">Specialists Near You</h1>
+    <section class="search-section">
+      <input type="text" class="specialist-search" placeholder="search for a facility here...">
+      <button class="search-btn"><i class="material-icons">search</i></button>
+    </section>
 
-  <p>Under construction...</p>
-
-  <input type="text" placeholder="search for a facility here...">
-  <button ng-click=""><i class="material-icons">search</i></button>
+    <section class="map-container">
+      <img src="./graphics/mobilemap.png" alt="map of local area" class="map">
+    </section>
   `,
-  controller: ["HeaconService", function(HeaconService){
-    const vm = this;
-    vm.retrieve = (search) =>{
-    HeaconService.getInfo(search).then((response)=> {
-      vm.storage = response.data;
-      console.log(vm.storage);
-    })
-   }
-  }]
 }
 
 angular

@@ -1,0 +1,32 @@
+.med-calendar-container, .cal-list {
+  display: flex;
+  justify-content: center;
+}
+
+.med-calendar {
+  height: 95%;
+  width: 97%;
+  border: 1px solid #4FC4F4; /*cornflower blue*/
+}
+
+.cal-list {
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.cal-list h3, .cal-list h4 {
+  color: #060E56;  /*navy blue*/
+}
+
+.cal-list h3 {
+  margin-bottom: 5px;
+}
+
+.cal-list li {
+  background-color: #4FC4F4; /*cornflower blue*/
+  color: white;
+  list-style-type: none;
+  margin: 2px;
+  padding: 2px;
+  width: 94%;
+}

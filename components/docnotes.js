@@ -50,15 +50,15 @@ const docnotes = {
     vm.notes = [
       {
         title: "Dr. Ipsum (Neurologist) Appt Summary",
-        content: "filler text here more filler text and on and on and on"
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus ligula."
       },
       {
         title: "Dr. Lorem Prescription Refill",
-        content: "filler text goes here too"
+        content: "In mi augue, condimentum nec urna id, rutrum viverra turpis. In id sagittis purus. Proin tempus vestibulum egestas. Suspendisse eleifend ut justo non porttitor."
       },
       {
         title: "Dr. Satler Appt Summary",
-        content: "filler text also goes here"
+        content: "Aliquam tincidunt nunc et finibus scelerisque. Sed in ante eu lectus convallis aliquam vitae eget libero. Phasellus mi erat."
       }
     ];
       vm.showForm = ()=> {
